@@ -67,7 +67,7 @@ def ydist_to_q(D):
     return q_out
 
 
-def tsne(X,perplexity = 30.0,n_dims = 2,max_iter = 1000,min_gain = 0.01,learning_rate = 10):
+def tsne(X,perplexity = 30.0,n_dims = 2,max_iter = 1000,min_gain = 0.01,learning_rate = 100):
     n = X.shape[0]
     Dx = pairwise_L2(X)
     Px = xdist_to_p(Dx,perplexity = 30.0,tol = 1e-5)
